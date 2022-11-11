@@ -1,0 +1,29 @@
+ {% extends 'base.html' %}
+ {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+<div style="padding-top:60pt;padding-left:2pt;padding-right:2pt;padding-bottom:6pt;">
+    <center>
+
+        <form>
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid"><br><br>
+        <label for="pass">Password:</label>
+        <input type="text" id="pass" name="pass"><br><br>
+        <a href="{% url 'userprofile' %}" >
+          <!--<input type="button"/>-->
+            <button type="button">Log in</button>
+        </a>
+        </form>
+        <p>Click the submit button to login</p>
+    </center>
+</div>
+
+</body>
+</html>
+{% endblock %}

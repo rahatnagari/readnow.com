@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<div style="padding-top:60pt;padding-left:2pt;padding-right:2pt;padding-bottom:6pt;">
+  <center>
+    <h1>Become a member to explore free books</h1>
+      <form>
+        <label for="fname">Fast Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <h4>Date of Birth</h4>
+        <label for="Birthdate">Day  :</label>
+        <input type="text" id="day" name="day"><br><br>
+        <label for="Birthmonth">Month  :</label>
+        <input type="text" id="Month" name="Month"><br><br>
+        <label for="Birthyear">Year  :</label>
+        <input type="text" id="Year" name="year"><br><br>
+
+        <label for="mobilenum">Mobile Number:</label>
+        <input type="text" id="mobilenum" name="mobilenum"><br><br>
+
+        <label for="country">Country :</label>
+        <input type="text" id="country" name="Country"><br><br>
+
+        <label for="district">District :</label>
+        <input type="text" id="district" name="dishtrict"><br><br>
+
+        <label for="prof">Profession:</label>
+        <input type="text" id="prof" name="prof"><br><br>
+
+        <label for="pass">Set Password :</label>
+        <input type="text" id="pass" name="pass"><br><br>
+
+         <a href="{% url 'userprofile' %}" >
+          <!--<input type="button"/>-->
+            <button type="button">create Profile</button>
+        </a>
+      </form>
+  </center>
+</div>
+
+</body>
+</html>
+{% endblock %}
